@@ -7,6 +7,6 @@
 		</update>
 	</info>
 	<files>
-		<file name="AwakenedCat.xml" url="https://raw.githubusercontent.com/JackOutTheBox/Aurorabuilder/master/Homebrew/Races/AwakenedCat.xml" />
+		<file name="races.index" url="https://raw.githubusercontent.com/JackOutTheBox124/Aurorabuilder/master/Homebrew/Races/races.index" />
 	</files>
 </index>
