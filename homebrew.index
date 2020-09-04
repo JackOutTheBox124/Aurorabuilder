@@ -3,7 +3,7 @@
 	<info>
 		<name>Homebrew</name>
 		<update version="1.0.0">
-			<file name="homebrew.index" url="https://raw.githubusercontent.com/yourgithubaccount/repositoryname/master/user-yourname.index" />
+			<file name="homebrew.index" url="https://raw.githubusercontent.com/JackOutTheBox124/Aurorabuilder/master/homebrew.index" />
 		</update>
 	</info>
 	<files>
