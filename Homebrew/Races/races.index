@@ -3,10 +3,10 @@
 	<info>
 		<name>Homebrew</name>
 		<update version="1.0.0">
-			<file name="races.index" url="https://raw.githubusercontent.com/JackOutTheBox/Aurorabuilder/master/homebrew/races.index" />
+			<file name="races.index" url="https://raw.githubusercontent.com/JackOutTheBox/Aurorabuilder/master/Homebrew/Races.index" />
 		</update>
 	</info>
 	<files>
-		<file name="AwakenedCat.xml" url="https://raw.githubusercontent.com/JackOutTheBox/Aurorabuilder/master/homebrew/races/AwakenedCat.xml" />
+		<file name="AwakenedCat.xml" url="https://raw.githubusercontent.com/JackOutTheBox/Aurorabuilder/master/Homebrew/Races/AwakenedCat.xml" />
 	</files>
 </index>
