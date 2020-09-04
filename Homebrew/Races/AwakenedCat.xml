@@ -2,14 +2,14 @@
 <elements>
     <info>
         <name>Awakened Cat</name>
-        <description>5e homebrHomebreweryion>
+        <description>5e homebrew</description>
         <author url="https://homebrewery.naturalcrit.com/share/SJHYdnaiVz">Homebrewery</author>
         <update version="0.0.4">
             <file name="AwakenedCat.xml" url="https://raw.githubusercontent.com/JackOutTheBox124/Aurorabuilder/master/Homebrew/Races/AwakenedCat.xml" />
         </update>
-    </info>
+     </info>
 
-    <element name="Awakened Cat" type="Race" source="Custom" id="ID_CUSTOM_RACE_AWAKENED_CAT">
+    <element name="Awakened Cat" type="Race" source="https://homebrewery.naturalcrit.com/share/SJHYdnaiVz" id="ID_CUSTOM_RACE_AWAKENED_CAT">
         <description>
             <h4>PHYSICAL DESCRIPTION</h4>
             <p>Awakened cats all look like normal housecats. However, each Awakened Cat has a gem hidden somewhere on their furry bodies that holds their life force and keeps them from becoming a regular cat. If this gem is destroyed, they become a normal cat and lose any and all abilities they may have had when they were sentinent. If this gem is reconstructed in any way, such as by the mending cantrip, the cat will regain all of the abilities it lost. If no spell is used to reform the crystal, it naturally reforms itself after 6 hours.</p>
@@ -43,28 +43,31 @@
                 <span class="feature">Languages.</span>You can speak, read, and write Common. Additionally, you can communicate with other felines in their own language, as if under a continous speak with animals spell You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br />
             </p>
         </description>
-    <sheet display="false" />
-    <setters>
-      <set name="height" modifier="1d4">16"</set>
-      <set name="weight" modifier="1d4">9 lb.</set>
-      <set name="sourceUrl"></set>
-    </setters>
-    <rules>      
-      <stat name="intelligence" value="2"/>
-      <stat name="wisdom" value="1"/>
-      <stat name="innate speed" value="30" bonus="base"/>
-      <grant type="Size" id="ID_SIZE_SMALL" />
-      <grant type="Vision" id="ID_VISION_DARKVISION" />
-      <grant type="Language" id="ID_LANGUAGE_COMMON" />
-      <grant type="Racial Trait" id="ID_WIKI_AWAKENED_CAT_RACIAL_TRAIT_PECULIAR_SPELLCASTER" />
-      <grant type="Racial Trait" id="ID_WIKI_AWAKENED_CAT_RACIAL_TRAIT_QUADRUPED_FRAME" />
-      <grant type="Racial Trait" id="ID_WIKI_AWAKENED_CAT_RACIAL_TRAIT_CREATURE_OF_MAGIC" />
-      <grant type="Racial Trait" id="ID_WIKI_AWAKENED_CAT_RACIAL_TRAIT_NINE_LIVES" />
-      <grant type="Racial Trait" id="ID_WIKI_AWAKENED_CAT_RACIAL_TRAIT_CATS_CLAWS" />
-      <grant type="Racial Trait" id="ID_WIKI_AWAKENED_CAT_RACIAL_TRAIT_FELINE_GRACE" />
-    </rules>
-  </element>
-
+        <setters>
+            <set name="names" type="male">Tiger, Baxter, Noodle, Skittles</set>
+            <set name="names" type="female">Surma, Cathy, Nutmeg, Aggie, Marbles, Pandora, Sapphire</set>
+            <set name="names-format">{{name}}</set>
+            <set name="height" modifier="1d4">16"</set>
+            <set name="weight" modifier="1">10</set>
+        </setters>
+        <sheet display="false">
+            <description>Nearly identical to a normal housecat. The only way to tell the difference between an awkened cat and a normal cat is by finding the soulstone of the awakened cat.</description>
+        </sheet>
+        <rules>
+            <stat name="intelligenceq" value="2" />
+            <stat name="wisdom" value="1" />
+            <select type="Ability Score Improvement" name="Awakened Cat" supports="ID_INTERNAL_ASI_STRENGTH|ID_INTERNAL_ASI_INTELLIGENCE" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Racial Trait" id="ID_WIKI_AWAKENED_CAT_RACIAL_TRAIT_PECULIAR_SPELLCASTER" />
+            <grant type="Racial Trait" id="ID_WIKI_AWAKENED_CAT_RACIAL_TRAIT_QUADRUPED_FRAME" />
+            <grant type="Racial Trait" id="ID_WIKI_AWAKENED_CAT_RACIAL_TRAIT_CREATURE_OF_MAGIC" />
+            <grant type="Racial Trait" id="ID_WIKI_AWAKENED_CAT_RACIAL_TRAIT_NINE_LIVES" />
+            <grant type="Racial Trait" id="ID_WIKI_AWAKENED_CAT_RACIAL_TRAIT_CATS_CLAWS" />
+            <grant type="Racial Trait" id="ID_WIKI_AWAKENED_CAT_RACIAL_TRAIT_FELINE_GRACE" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+        </rules>
+   </element>
   <element name="Peculiar Spellcaster" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_AWAKENED_CAT_RACIAL_TRAIT_PECULIAR_SPELLCASTER">
     <description>
       <p>In place of verbal commands, a combination of telepathic projection with feline vocalizations will suffice, and somatic gestures can be approximated with the wave of a tail, the arch of a spine, and paw movements. Instead of a focus like a wand or staff, which it obviously can’t use, magical energy concentrates in the special hairs of their whiskers and along its back, which it expends as sparks.</p>
@@ -73,15 +76,15 @@
       <description>In place of verbal commands, a combination of telepathic projection with feline vocalizations will suffice, and somatic gestures can be approximated with the wave of a tail, the arch of a spine, and paw movements. Instead of a focus like a wand or staff, which it obviously can’t use, magical energy concentrates in the special hairs of their whiskers and along its back, which it expends as sparks.</description>
     </sheet>
   </element>
-  <element name="Quadruped Frame" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_AWAKENED_CAT_RACIAL_QUADRUPED_FRAME">
+  <element name="Quadruped Frame" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_AWAKENED_CAT_RACIAL_TRAIT_QUADRUPED_FRAME">
+    <description>
       <p>While not wearing armor, your Armor Class is equal to 11 + your character's Dexterity modifier. You require special armor to fit your body shape.</p>
     </description>
     <sheet>
       <description>While not wearing armor, your Armor Class is equal to 11 + your character's Dexterity modifier. You require special armor to fit your body shape.</description>
     </sheet>
-    <rules>
   </element>
-  <element name="Creature of Magic" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_AWAKENED_CAT_RACIAL_CREATURE_OF_MAGIC">
+  <element name="Creature of Magic" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_AWAKENED_CAT_RACIAL_TRAIT_CREATURE_OF_MAGIC">
     <description>
       <p>An Awakened cat is a being created and sustained in part by a magic gem called a soulstone. Any effect that suppresses magic returns an Awakened cat to her former state and temporarily strips away their conscious thought. This can be averted with a successful Charisma saving throw of DC 10 + the spell slot's level used to remove the Awakened Cat's intellect. Should they leave the area of effect or its duration expire, they awaken with no memory of the time while under the antimagic’s infuence. Additionally, due to the magic of the soulstone, an Awakened Cat can use Mage Hand without using spell slots with the following effects added to the spell:<br />
           You may use this spell to perform finer functions that normally require hands, such as lifting a mug and taking a drink and writing a letter.<br />
@@ -92,7 +95,6 @@
           You may use this spell to perform finer functions that normally require hands, such as lifting a mug and taking a drink and writing a letter.<br />
           You also may use Mage Hand to weild a one-hand.</description>
     </sheet>
-    <rules>
   </element>
   <element name="Nine Lives" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_AWAKENED_CAT_RACIAL_TRAIT_NINE_LIVES">
     <description>
@@ -110,7 +112,6 @@
     <description>
       <p>Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
     </description>
-    <sheet>
     </sheet>
   </element>
   <element name="Feline Grace" type="Racial Trait" source="D&amp;D Wiki" id="ID_WIKI_AWAKENED_CAT_RACIAL_TRAIT_FELINE_GRACE">
