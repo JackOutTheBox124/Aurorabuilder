@@ -3,7 +3,7 @@
 	<info>
 		<name>Homebrew</name>
 		<update version="1.0.0">
-			<file name="races.index" url="https://raw.githubusercontent.com/JackOutTheBox/Aurorabuilder/master/races.index" />
+			<file name="races.index" url="https://raw.githubusercontent.com/JackOutTheBox/Aurorabuilder/master/homebrew/races.index" />
 		</update>
 	</info>
 	<files>
