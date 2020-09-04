@@ -2,7 +2,8 @@
 <elements>
     <info>
         <name>Awakened Cat</name>
-        <description>5e homebrew</description>
+        <description>5e homebrHomebreweryion>
+        <author url="https://homebrewery.naturalcrit.com/share/SJHYdnaiVz">Homebrewery</author>
         <update version="0.0.4">
             <file name="AwakenedCat.xml" url="https://raw.githubusercontent.com/JackOutTheBox124/Aurorabuilder/master/Homebrew/Races/AwakenedCat.xml" />
         </update>
