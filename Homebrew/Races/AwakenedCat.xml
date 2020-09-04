@@ -4,7 +4,7 @@
         <name>Awakened Cat</name>
         <description>5e homebrew</description>
         <update version="0.0.4">
-            <file name="AwakenedCat.xml" url="https://https://raw.githubusercontent.com/JackOutTheBox124/Custom-Aurora-Character-Tool-Elements/master/races/Awakened%20Cat" />
+            <file name="AwakenedCat.xml" url="https://raw.githubusercontent.com/JackOutTheBox124/Aurorabuilder/master/Homebrew/Races/AwakenedCat.xml" />
         </update>
     </info>
 
