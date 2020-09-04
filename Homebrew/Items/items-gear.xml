@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Soulstone</name>
+		<description></description>
+		<author url="https://homebrewery.naturalcrit.com/">Homebrewery</author>
+		<update version="0.1.0">
+			<file name="items-gear.xml" url="https://raw.githubusercontent.com" />
+		</update>
+	</info>
+
+<element name="Soulstone" type="Item" source="Awakened Cat" id="ID_HBY_HBR_ITEM_SOULSTONE">
+		<description>
+			<p>A magical stone embued with the power of a soul. Any non–sapient being will gain sapience if worn. If the Soulstone were to be destroyed, it can insantly be repaired using the "Mending" spell or after 6 hours, it will pull itself bag together and reform. If the Soulstone is removed from the being wearing it, it will lose it's sapience until it is put back on and the being will retain no memory of what happened when the Soulstone was removed.</p>
+		</description>
+		<setters>
+			<set name="category">Spellcasting Focus</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="1">0.5 lb.</set>
+			<set name="container">Holy Symbol</set>
+		</setters>
+	</element>
+</elements>
