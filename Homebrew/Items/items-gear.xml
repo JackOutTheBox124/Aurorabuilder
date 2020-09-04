@@ -5,7 +5,7 @@
 		<description></description>
 		<author url="https://homebrewery.naturalcrit.com/">Homebrewery</author>
 		<update version="0.1.0">
-			<file name="items-gear.xml" url="https://raw.githubusercontent.com" />
+			<file name="items-gear.xml" url="https://raw.githubusercontent.com/JackOutTheBox124/Aurorabuilder/master/Homebrew/Items/items-gear.xml" />
 		</update>
 	</info>
 
